@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+/* Slides padrão (laterais) */
+.swiper-slide {
+  @apply blur-sm brightness-75 scale-90 transition-all duration-300;
+}
+
+/* Slide ativo (centro) */
+.swiper-slide-active {
+  @apply blur-none brightness-100 scale-105;
+}
+
+/* Setas de navegação */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: white;   /* seta branca */
+  font-size: 1.5rem; /* opcional, aumenta a seta */
+}
+
+/* Bullets da pagination */
+.swiper .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.5); /* inativo */
+}
+
+.swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: white; /* ativo */
+}
+
+

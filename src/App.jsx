@@ -1,4 +1,5 @@
 import Banner from "./components/Banner";
+import Carousel from "./components/carousel";
 
 export default function App() {
   return (
@@ -9,6 +10,10 @@ export default function App() {
       bg-[url('./assets/bg.JPG')] bg-cover md:bg-center w-full
       ">
         <Banner />
+      </section>
+      <section className="flex flex-col justify-center items-center p-6 h-full">
+        <h1 className="text-2xl text-white">Galeria</h1>
+        <Carousel />
       </section>
     </main>
     </>
