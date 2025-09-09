@@ -34,7 +34,7 @@ export default function App() {
         </div>
       </section>
       <section className="flex flex-col justify-center items-center p-6 h-full">
-        <h1 className="text-2xl text-white flex gap-2"><span><img src={icon}/></span>Galeria<span><img src={icon}/></span></h1>
+        <h1 className="text-5xl text-white flex gap-2" style={{ fontFamily: "'Qwitcher Grypen', cursive" }}><span><img src={icon}/></span>Galeria<span><img src={icon}/></span></h1>
         <Carousel />
       </section>
       <section>
