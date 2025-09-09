@@ -4,6 +4,8 @@ import Carousel from "./components/carousel";
 import icon from "./assets/icon.png";
 
 export default function App() {
+  const year = new Date().getFullYear();
+
   return (
     <>
     <main className="bg-[#757A66]">
@@ -34,6 +36,11 @@ export default function App() {
       <section className="flex flex-col justify-center items-center p-6 h-full">
         <h1 className="text-2xl text-white flex gap-2"><span><img src={icon}/></span>Galeria<span><img src={icon}/></span></h1>
         <Carousel />
+      </section>
+      <section>
+        <footer className="text-center p-4 text-white bg-[#47472D]">
+          <p>© {year} Luana Florentino | Tatuadora. Todos os direitos reservados.</p>
+        </footer>
       </section>
     </main>
     </>
